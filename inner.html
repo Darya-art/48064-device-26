@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
-
   <header>
     <div class="up-logo">
-      <!-- или картинка? или текст? -->
-      <a href="index.html">device</a>
+        <a href="index.html" aria-label="Переход на главную страницу сайта">
+            <img src="img/logo-device.svg" width="100" height="50" alt="Девайс">
+       </a>
     </div>
-    <div class="first-line" <form>
+    <div class="first-line">
+    <form>
       <!-- поиск -->
       </form>
-      <a class="login" href="#">Войти</a>
-      <a class="compare" href="#">Сравнить</a>
-      <a class="cart" href="#">Корзина</a>
+      <ul>
+          <li><a class="login" href="#" aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
+          <li><a class="compare" href="#" aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a>
+          </li>
+          <li><a class="cart" href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
+        </ul>
     </div>
     <nav>
-      <ul class="main-menu">
-        <li>
-          <a href="#">Каталог товаров</a>
-          <div class="catalog">
-            <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="inner.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-            </ul>
-            <ul>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
+        <ul class="main-menu">
+          <li>
+            <a href="#" aria-label="Каталог-товаров по категориям">Каталог товаров</a>
+            <div class="catalog">
+              <ul>
+                <li><a href="#" aria-label="Раздел товаров для виртуальной реальности">Виртуальная реальность</a></li>
+                <li><a href="inner.html" aria-label="Раздел товаров с моноподами для серфи">Моноподы для селфи</a></li>
+<!--Надо ли тут оставлять ссылку в меню, если мы на этой странице? Может ее как-то выделять, что она неактивна?-->
+                <li><a href="#" aria-label="Раздел товаров с экшн-камерами">Экшн-камеры</a></li>
+              </ul>
+              <ul>
+                <li><a href="#" aria-label="Раздел товаровс фитнес-браслетами">Фитнес-браслеты</a></li>
+                <li><a href="#" aria-label="Раздел товаров с умными часами">Умные часы</a></li>
+              </ul>
+              <ul>
+                <li><a href="#" aria-label="Раздел товаров с квадрокоптерами">Квадрокоптеры</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" aria-label="Раздел про доставку">Доставка</a></li>
+          <li><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
+          <li><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
+        </ul>
+      </nav>
   </header>
 
   <main>
 
     <div>
       <h1>Моноподы для селфи</h1>
+      <!--а вообще хлебные крошки не делаются автоматом как-то или это только в CRM?-->
       <ul>
         <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li></li>
-        <a href="#">Каталог товаров</a>
+          <a href="index.html" aria-label="Переход на главную страницу сайта">Главная</a>
         </li>
         <li>
-          <a href="#">Моноподы для селфи</a>
+        <a href="#" aria-label="Ссылка на все категории товаров, что у нас есть">Каталог товаров</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Раздел со всеми товарами категории моноподов для селфи">Моноподы для селфи</a>
         </li>
       </ul>
     </div>
 
     <div>
-      <!--тут я вообще ничего не понимаю, как верстать-->
       <div>
         <h2>Фильтр:</h2>
       </div>
@@ -81,9 +85,7 @@
             <a href="#">По популярности</a>
           </li>
         </ul>
-
         <ul>
-          <!--картинки или стили?-->
           <li><a href="#">вверх</a></li>
           <li><a href="#">вниз</a></li>
         </ul>
@@ -92,14 +94,14 @@
 
 
     <div>
-      <!--сортировка через формы? они должны работать?-->
+      <!--сейчас буду работать над формами-->
     </div>
 
     <section>
       <div>
         <ul>
           <li>
-            <img src="#" alt="Любительская селфи-палка">
+            <img src="img/simple-selfi-monopod.png" alt="Любительская селфи-палка">
             <div>
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
@@ -110,7 +112,7 @@
           </li>
 
           <li>
-            <img src="#" alt="Профессиональная селфи-палка">
+            <img src="img/progessional-selfi.png" alt="Профессиональная селфи-палка">
             <div>
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
@@ -121,7 +123,7 @@
           </li>
 
           <li>
-            <img src="#" alt="Непотопляемая селфи-палка">
+            <img src="img/unbreakable-selfi.png" alt="Непотопляемая селфи-палка">
             <div>
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
@@ -132,7 +134,7 @@
           </li>
 
           <li>
-            <img src="#" alt="Селфи-палка «Следуй за мной»">
+            <img src="img/follow-me-selfi.png" alt="Селфи-палка «Следуй за мной»">
             <div>
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
@@ -148,27 +150,22 @@
         <ul>
           <li>
             <a href="#">назад</a>
-          </li>
+            </li>
           <li>
-            <ul>
-              <li>
-                <a href="#">1</a>
-              </li>
-              <li>
-                <a href="#">2</a>
-              </li>
-              <li>
-                <a href="#">3</a>
-              </li>
-            </ul>
-          </li>
+            <a href="#">1</a>
+            </li>
+          <li>
+            <a href="#">2</a>
+            </li>
+          <li>
+            <a href="#">3</a>
+            </li>
           <li>
             <a href="#">вперед</a>
           </li>
         </ul>
       </div>
     </section>
-
   </main>
 
 
@@ -176,57 +173,56 @@
     <div>
       <div>
         <div class="down-logo">
-          <a href="index.html">device</a> <!-- или картинка? или текст? -->
+          <a href="index.html" aria-label="Переход на главную страницу сайта">
+            <img src="img/logo-yellow.svg" width="100" height="50" alt="Девайс">
+          </a>
         </div>
         <div>
-          <ul>
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div>
-          <p>г. Москва, ул. Строителей, 15</p>
+            <ul>
+              <li><a href="#" aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
+              <li><a href="#" aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a></li>
+              <li><a href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
+            </ul>
+          </div>
         </div>
         <div>
-          <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+          <div>
+            <p>г. Москва, ул. Строителей, 15</p>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#" aria-label="Раздел про выгодную доставку">Доставка</a></li>
+              <li><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
+              <li><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Тел.: +7 (495) 495-95-95</p>
+          </div>
         </div>
         <div>
-          <p>Тел.: +7 (495) 495-95-95</p>
-        </div>
-      </div>
-
-
-      <div>
-        <ul>
-          <li>
-            <a class="social" href="#">
-              <img src="#" width="32" height="32" alt="facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social" href="#">
-              <img src="#" alt="instagram">
-            </a>
-          </li>
-          <li>
-            <a class="social" href="#">
-              <img src="#" alt="twitter">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <a href="https://htmlacademy.ru/"><img src="#" alt="HTML Academy"></a>
-      </div>
-
-  </footer>
+            <ul>
+              <li>
+                <a class="social" href="#" aria-label="Ссылка на группу компании Device в Facebook">
+                  <img src="img/fb.svg" width="32" height="32" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a class="social" href="#" aria-label="Ссылка на страничку компании Device в Instagram">
+                  <img src="img/instagram.svg" alt="instagram">
+                </a>
+              </li>
+              <li>
+                <a class="social" href="#" aria-label="Ссылка на страничку компании Device в Twitter">
+                  <img src="img/twitter.svg" alt="twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Academy"><img src="img/logo-html.svg" alt="HTML Academy"></a>
+          </div>
+      </footer>
 
 </body>
 
