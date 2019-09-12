@@ -14,8 +14,10 @@
       </a>
     </div>
     <div class="first-line">
-      <form>
-        <!-- поиск -->
+      <form class="search" action="http://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+        <input type="text" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
       </form>
       <ul>
         <li><a class="login" href="#" aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
@@ -95,7 +97,50 @@
 
 
     <div>
-      <!--сейчас буду работать над формами-->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Стоимость</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="black" id="filter-black">
+              <label for="filter-black">Черный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="white" id="filter-white">
+              <label for="filter-white">Белый</label>
+            </li>
+            <li>
+              <input type="checkbox" name="blue" id="filter-blue">
+              <label for="filter-blue">Синий</label>
+            </li>
+            <li>
+              <input type="checkbox" name="red" id="filter-red">
+              <label for="filter-red">Красный</label>
+            </li>
+            <li>
+              <input type="checkbox" name="pink" id="filter-pink">
+              <label for="filter-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes">
+              <label for="bluetooth-yes">Есть</label>
+            </li>
+            <li>
+              <input type="radio" name="bluetooth" value="no" id="bluetooth-no">
+              <label for="bluetooth-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </div>
 
     <section>
