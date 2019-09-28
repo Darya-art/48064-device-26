@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet"
+    id="wt-sky-css--725574360">
 </head>
 
 <body>
@@ -12,20 +16,21 @@
       <img src="img/logo-device.svg" width="100" height="50" alt="Девайс">
     </div>
     <div class="first-line">
-      <form class="search" action="http://echo.htmlacademy.ru" method="get">
+      <form class="search-form search-header" action="http://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-form-input">Поле поиска</label>
-        <input type="text" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+        <input type="text" class="search-text-header" placeholder="Поиск по сайту">
+        <button type="submit" class="button search-button">Найти</button>
       </form>
-      <ul>
-        <li><a class="login" href="#" aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
-        <!--Будет ли форма для входа на сайт? в макете не нашла ее. Или это просто ссылка?-->
-        <li><a class="compare" href="#" aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a>
+      <ul class="up-menu">
+        <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-login" href="#"
+            aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
+        <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-compare" href="#"
+            aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a>
         </li>
-        <li><a class="cart" href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
+        <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-cart" href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
       </ul>
     </div>
-    <nav>
+    <nav class="up-menu-navigation">
       <ul class="main-menu">
         <li>
           <a href="#" aria-label="Каталог-товаров по категориям">Каталог товаров</a>
@@ -56,138 +61,140 @@
       <h1 class="visually-hidden">Каталог топ-товаров магазина Device</h1>
       <!-- здесь будет слайдер -->
 
-      <img src="img/monopod-slider.png" alt="Самая длинная палка для селфи">
-      <p>Делай селфи,<br> как Бен Стиллер!</p>
-      <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5
+      <img class="slider-image" src="img/monopod-slider.png" alt="Самая длинная палка для селфи">
+      <p class="slider-title">Делай селфи,<br> как Бен Стиллер!</p>
+      <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров
+        длиной и весом всего 5
         килограмм.</p>
-      <a href="#">Подробнее</a>
-      <table>
+      <a class="slider-link link-more" href="#">Подробнее</a>
+      <table class="slider-table">
         <tbody>
           <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
+            <td class="slider-item-parameter">8,5 м</td>
+            <td class="slider-item-parameter">5 кг</td>
+            <td class="slider-item-parameter">Карбон</td>
           </tr>
           <tr>
-            <td>Длина палки</td>
-            <td>Вес палки</td>
-            <td>Материал</td>
+            <td class="slider-item-describe">Длина палки</td>
+            <td class="slider-item-describe">Вес палки</td>
+            <td class="slider-item-describe">Материал</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <div>
-      <img src="img/fitness-bracelet-slider.png" alt="Фитнес-браслет Худеем правильно!">
-      <p>Худеем<br> правильно!</p>
-      <p>Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.</p>
-      <a href="#">Подробнее</a <table>
-      <tbody>
-        <tr>
-          <td>48 часов</td>
-        </tr>
-        <tr>
-          <td>Без подзарядки</td>
-        </tr>
-      </tbody>
+      <img class="slider-image" src="img/fitness-bracelet-slider.png" alt="Фитнес-браслет Худеем правильно!">
+      <p class="slider-title">Худеем<br> правильно!</p>
+      <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать
+        диету.</p>
+      <a class="slider-link link-more" href="#">Подробнее </a>
+      <table class="slider-table">
+        <tbody>
+          <tr>
+            <td class="slider-item-parameter">48 часов</td>
+          </tr>
+          <tr>
+            <td class="slider-item-describe">Без подзарядки</td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
     <div>
-      <img src="img/qvadrocopter-slider.png" alt="Квадрокоптер с мощным лазером">
-      <p>Порхает как бабочка, <br> жалит как пчела!</p>
-      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.
+      <img class="slider-image" src="img/qvadrocopter-slider.png" alt="Квадрокоптер с мощным лазером">
+      <p class="slider-title">Порхает как бабочка, <br> жалит как пчела!</p>
+      <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под
+        стандартную камеру.
       </p>
-      <a href="#">Подробнее</a>
+      <a class="slider-link link-more" href="#">Подробнее</a>
 
-      <table>
+      <table class="slider-table">
         <tbody>
           <tr>
-            <td>800 метров</td>
-            <td>50 метров</td>
+            <td class="slider-item-parameter">800 метров</td>
+            <td class="slider-item-parameter">50 метров</td>
           </tr>
           <tr>
-            <td>Дальность полета</td>
-            <td>Радиус поражения</td>
+            <td class="slider-item-describe">Дальность полета</td>
+            <td class="slider-item-describe">Радиус поражения</td>
           </tr>
         </tbody>
       </table>
     </div>
 
     <h2 class="visually-hidden">Категории товаров</h2>
-    <section class="category">
-      <div>
-        <ul>
-          <li>
-            <a href="#" aria-label="Раздел товаров для виртуальной реальности">
-              <img src="img/mini-vurtual-reality.svg" alt="Очки виртуальной реальности">
-              <p>Виртуальная реальность</p>
-            </a>
-          </li>
-          <li>
-            <a href="inner.html" aria-label="Раздел товаров с моноподами для серфи">
-              <img src="img/mini-monopod.svg" alt="Селфи-палка">
-              <p>Моноподы для селфи</p>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Раздел товаров с экшн-камерами">
-              <img src="img/mini-action-camera.svg" alt="Экшн-камера">
-              <p>Экшн-камеры</p>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Раздел товаровс фитнес-браслетами">
-              <img src="img/mini-fitness-bracelet.svg" alt="Фитнес-браслет">
-              <p>Фитнес-браслеты</p>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Раздел товаров с умными часами">
-              <img src="img/mini-smart-watches.svg" alt="Умные часы">
-              <p>Умные часы</p>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Раздел товаров с квадрокоптерами">
-              <img src="img/mini-quadrocopter.svg" alt="Квадрокоптер">
-              <p>Квадрокоптеры</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="categories-panel">
+      <ul class="categories-list">
+        <li class="categories-section">
+          <a class="categories-section-link" href="#" aria-label="Раздел товаров для виртуальной реальности">
+            <img class="categories-section-image" src="img/mini-vurtual-reality.svg" alt="Очки виртуальной реальности">
+            <p class="categories-section-title">Виртуальная реальность</p>
+          </a>
+        </li>
+        <li class="categories-section">
+          <a class="categories-section-link" href="inner.html" aria-label="Раздел товаров с моноподами для серфи">
+            <img class="categories-section-image" src="img/mini-monopod.svg" alt="Селфи-палка">
+            <p class="categories-section-title">Моноподы для селфи</p>
+          </a>
+        </li>
+        <li class="categories-section">
+          <a class="categories-section-link" href="#" aria-label="Раздел товаров с экшн-камерами">
+            <img class="categories-section-image" src="img/mini-action-camera.svg" alt="Экшн-камера">
+            <p class="categories-section-title">Экшн-камеры</p>
+          </a>
+        </li>
+        <li class="categories-section">
+          <a class="categories-section-link" href="#" aria-label="Раздел товаровс фитнес-браслетами">
+            <img class="categories-section-image" src="img/mini-fitness-bracelet.svg" alt="Фитнес-браслет">
+            <p class="categories-section-title">Фитнес-браслеты</p>
+          </a>
+        </li>
+        <li class="categories-section">
+          <a class="categories-section-link" href="#" aria-label="Раздел товаров с умными часами">
+            <img class="categories-section-image" src="img/mini-smart-watches.svg" alt="Умные часы">
+            <p class="categories-section-title">Умные часы</p>
+          </a>
+        </li>
+        <li class="categories-section">
+          <a class="categories-section-link" href="#" aria-label="Раздел товаров с квадрокоптерами">
+            <img class="categories-section-image" src="img/mini-quadrocopter.svg" alt="Квадрокоптер">
+            <p class="categories-section-title">Квадрокоптеры</p>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <h2 class="visually-hidden">Услуги и сервисы: доставка, гарантии, кредит</h2>
     <section class="service">
-      <div>
-        <ul>
-          <li>
-            <a href="#" aria-label="Раздел про доставку">Доставка</a>
+      <div class="services-rightpart">
+        <ul class="services-navigate">
+          <li class="oneservice-navigate">
+            <a class="link-more link-sevices" href="#" aria-label="Раздел про доставку">Доставка</a>
           </li>
-          <li>
-            <a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a>
+          <li class="oneservice-navigate">
+            <a class="link-more link-sevices" href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a>
           </li>
-          <li>
-            <a href="#" aria-label="Раздел про наш выгодный кредит">Кредит</a>
+          <li class="oneservice-navigate">
+            <a class="link-more link-sevices" href="#" aria-label="Раздел про наш выгодный кредит">Кредит</a>
           </li>
         </ul>
 
-        <div>
-          <ul>
-            <li>
+        <div class="services-leftpart">
+          <ul class="services-description">
+            <li class="oneservice-description">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</p>
               <img src="img/delivery.svg" alt="Стремительный курьер, доставка">
             </li>
-            <li>
+            <li class="oneservice-description">
               <h2>Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
                 новый.<br> Товар, не дом, конечно же.</p>
               <img src="img/warranty.svg" alt="Гарантии, позвони и расскажи, что не так">
             </li>
-            <li>
+            <li class="oneservice-description">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
                 кредита. Выгодные для нашего банка, разумеется.</p>
@@ -199,8 +206,8 @@
 
     <h2 class="visually-hidden">Бренды, товары которых мы продаем</h2>
     <section class="brands">
-      <div>
-        <ul>
+      <div class="brands">
+        <ul class="brands-list">
           <li>
             <a href="#" aria-label="Ссылка на сайт наших партнеров Djj">
               <img src="img/brand-logo-djj.svg" alt="dji">
@@ -226,65 +233,73 @@
     </section>
 
 
-    <div>
+    <div class="bottom-main">
       <section class="about-us">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+        <h2 class="about-us-title">О нас</h2>
+        <p class="about-us-discription">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
+          нас.</p>
+        <p class="about-us-discription">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+          многими транспортными
           компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="about-us-partners">
+          <li><strong>Деловые линии</strong></li>
+          <li><strong>Автотрейдинг</strong></li>
+          <li><strong>ЖелДорЭкспедиция</strong></li>
         </ul>
-        <a href="#" aria-label="Раздел, где можно узать много интересного о нас">Подробнее о нас</a>
+        <a class="link-more link-about-us" href="#"
+          aria-label="Раздел, где можно узать много интересного о нас">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+        <h2 class="about-us-contacts">Контакты</h2>
+        <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          работоспособность покупки.
           Всякое бывает.</p>
-        <a href="#"
+        <a class="map" href="#"
           aria-label="Ссылка на карту с нашим адресом. Кстати, мы находимся по адресу Москва, ул. Строителей, 15">
-          <img src="img/map-mini.jpg" alt="Карта с нашим адресом Москва, ул. Строителей, 15"></a>
-        <a href="#" aria-label="Нажми и откроется форма обратной связи">Напишите нам</a>
+          <img src="img/map-mini.jpg" alt="Карта с нашим адресом Москва, ул. Строителей, 15">
+        </a>
+        <a class="link-more write-to-us" href="#" aria-label="Нажми и откроется форма обратной связи">Напишите нам</a>
       </section>
     </div>
+    <div class="clearfix"></div>
   </main>
 
   <footer>
-    <div>
-      <div>
+    <div class="footer-all">
+      <div class="footer-up-part">
         <div class="down-logo">
           <img src="img/logo-yellow.svg" width="100" height="50" alt="Девайс">
         </div>
         <div>
-          <ul>
-            <li><a href="#" aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
-            <li><a href="#" aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a></li>
-            <li><a href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
+          <ul class="down-menu">
+            <li><a class="down-menu-links down-menu-login" href="#"
+                aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
+            <li><a class="down-menu-links down-menu-compare" href="#"
+                aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a></li>
+            <li><a class="down-menu-links down-menu-cart" href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
           </ul>
         </div>
       </div>
-      <div>
+      <div class="footer-center-part">
         <div>
           <address>г. Москва, ул. Строителей, 15</address>
         </div>
         <div>
           <ul>
-            <li><a href="#" aria-label="Раздел про выгодную доставку">Доставка</a></li>
-            <li><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
-            <li><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
+            <li><a class="down-menu-navigation" href="#" aria-label="Раздел про выгодную доставку">Доставка</a></li>
+            <li><a class="down-menu-navigation" href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
+            <li><a class="down-menu-navigation" href="#" aria-label="Раздел с контактами">Контакты</a></li>
           </ul>
         </div>
         <div>
-          <a href="tel:+4545464545">Тел.: +7 (495) 495-95-95</a>
+          <a class="phone" href="tel:+4545464545">Тел.: +7 (495) 495-95-95</a>
         </div>
       </div>
 
 
-      <div>
-        <ul>
+      <div class="footer-down-part">
+        <ul class="social-pages">
           <li>
             <a class="social" href="#" aria-label="Ссылка на группу компании Device в Facebook">
               <img src="img/fb.svg" width="32" height="32" alt="facebook">
@@ -308,17 +323,17 @@
       </div>
   </footer>
 
-  <section class="form-write-to-us">
+  <section class="form-write-to-us" class="visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="write-to-us-name">Ваше имя:</label>
-          <input type="text" name="name" id="write-to-us-name" placeholder="Имя Фамилия">
-        </div>
-        <div>
-          <label for="write-to-us-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="write-to-us-email" placeholder="email@example.com">
-        </div>
+      <div>
+        <label for="write-to-us-name">Ваше имя:</label>
+        <input type="text" name="name" id="write-to-us-name" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label for="write-to-us-email">Ваш e-mail:</label>
+        <input type="email" name="email" id="write-to-us-email" placeholder="email@example.com">
+      </div>
       <div>
         <label for="write-to-us-text">Текст письма:</label>
         <textarea name="text" id="write-to-us-text" placeholder="В свободной форме"></textarea>
@@ -328,7 +343,7 @@
     <button type="button">Закрыть</button>
   </section>
 
-  <section class="open-map">
+  <section class="open-map" class="visually-hidden">
     <h2 class="visually-hidden">Карта</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551"
@@ -338,4 +353,5 @@
   </section>
 
 </body>
+
 </html>

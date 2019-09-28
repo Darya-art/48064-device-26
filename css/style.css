@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: rgb(71, 72, 75);
+}
+a:active {
+  color: rgb(178, 181, 187);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/gilroylight.woff2) format('woff2'), url(../fonts/gilroylight.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/gilroyextrabold.woff2) format('woff2'), url(../fonts/gilroyextrabold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/opensanslight.woff2) format('woff2'), url(../fonts/opensanslight.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/opensans.woff2) format('woff2'), url(../fonts/opensans.woff) format('woff');
+  font-weight: 700;
+  font-style: normal
+}
+
+.visually-hidden:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.search-button {
+  visibility: hidden;
+}
+
+/* Для header */
+
+header {
+  position: relative;
+  min-height: 300px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 0 60px;
+  background-color: #f7e296;
+  width: 100%;
+}
+
+.up-logo {
+  margin-top: 40px;
+  padding: 0 60px;
+}
+
+/* что с лого делать пока не пойму */
+
+.up-menu-navigation, {
+  display: flex;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  width: 440px;
+  margin-right: 100px;
+  line-height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.search-text-header {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.up-menu a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: black;
+  position: relative;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+.up-menu-compare {
+  margin-right: 33px;
+  margin-left: auto;
+}
+
+.up-menu-cart {
+  padding-left: 27px;
+}
+
+.main-menu {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+.main-menu .catalog li {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 200;
+  color: black;
+  position: relative;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+/* Для слайдера */
+
+.slider-image {
+  height: 486px;
+  width: 384px;
+}
+
+.slider-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  color: black;
+  font-weight: 700;
+}
+
+.slider-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: black;
+}
+
+.slider-item-parameter {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  color: black;
+  font-weight: 200;
+}
+
+.slider-item-describe {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: black;
+}
+
+
+/* Разделы-секции на главной */
+
+.categories-panel {
+  width: 1160px;
+  display: flex;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-section-image {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
+
+.categories-section-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* Раздел про услуги и возможности
+*/
+.services-navigate {
+  display: flex;
+  flex-direction: column;
+  min-width: 277px;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.oneservice-description p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.brands-list {
+  display: flex;
+}
+
+.link-more {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+/* Разделы о нас и контакты */
+
+section.about-us {
+  display: float;
+  width: 450px;
+  float: left;
+  margin: 10px;
+}
+
+section.contacts {
+  display: float;
+  width: 450px;
+  float: right;
+  margin: 10px;
+}
+
+.about-us-discription {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: black;
+}
+
+.contacts-description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* внутренняя страница */
+h1 {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  color: black;
+  font-weight: 700;
+}
+
+.catalog-path-nav, .range-options {
+display: flex;
+}
+
+h2.filter-title {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+legend {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: black;
+}
+
+.filter-left {
+  display: float;
+  float: left;
+  width: 400px;
+  background-color: rgb(212, 209, 209);
+}
+
+.catalog-items-teaser {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-items-teaser img {
+  width: 360px;
+  height: 380px;
+}
+
+.item-teaser-title {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+.item-teaser-price {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+}
+
+.catalog-navigation-down {
+  display: flex;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  background-color: rgb(212, 209, 209);
+}
+
+/* ПОДВАЛ */
+
+footer {
+  background-color: #464646;
+  width: 1160px;
+}
+
+.down-menu a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .7);
+  position: relative;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+address,
+.phone {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, .7);
+}
+
+.down-menu-navigation {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+.social-pages {
+  display: flex;
+}
+
+/* Почему не сделать горизонтальное выравнивание в хедере?
+Правильно ли подключились шрифты?
+Ссылки в хедере фиолетовые почему-то, поставить стили для всех вариантов ссылок?
+Раздел с желтыми квадритиками, лучше разделить квадрат и картинку svg?
+*/
