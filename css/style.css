@@ -10,13 +10,32 @@ a {
 a:link {
   color: black;
 }
+
 a:visited {
   color: black;
 }
+
 a:hover {
   color: rgb(71, 72, 75);
 }
+
 a:active {
+  color: rgb(178, 181, 187);
+}
+
+a.down-menu-links:link {
+  color: white;
+}
+
+a.down-menu-links:visited {
+  color: white;
+}
+
+a.down-menu-links:hover {
+  color: rgb(143, 144, 148);
+}
+
+a.down-menu-links:active {
   color: rgb(178, 181, 187);
 }
 
@@ -72,8 +91,8 @@ header {
   position: relative;
   min-height: 300px;
   margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
   padding: 0 60px;
   background-color: #f7e296;
   width: 100%;
@@ -86,7 +105,8 @@ header {
 
 /* что с лого делать пока не пойму */
 
-.up-menu-navigation, {
+.up-menu-navigation,
+  {
   display: flex;
 }
 
@@ -299,8 +319,9 @@ h1 {
   font-weight: 700;
 }
 
-.catalog-path-nav, .range-options {
-display: flex;
+.catalog-path-nav,
+.range-options {
+  display: flex;
 }
 
 h2.filter-title {
@@ -383,9 +404,25 @@ label {
 
 /* ПОДВАЛ */
 
-footer {
+.footer-all {
   background-color: #464646;
-  width: 1160px;
+  width: 100%;
+  margin-bottom: 7px
+}
+
+.footer-up-part,
+.footer-center-part,
+.footer-down-part {
+  display: flex;
+}
+
+.footer-up-part {
+justify-content: space-between;
+}
+
+.down-menu-navigation {
+  margin: 20px;
+  justify-content: space-between;
 }
 
 .down-menu a {
@@ -405,6 +442,8 @@ address,
   line-height: 30px;
   letter-spacing: 0;
   color: rgba(255, 255, 255, .7);
+  width: 250px;
+  text-align: left;
 }
 
 .down-menu-navigation {
@@ -420,6 +459,13 @@ address,
 
 .social-pages {
   display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.HTML-Academy-logo {
+  width: 80px;
+  text-align: right;
 }
 
 /* Почему не сделать горизонтальное выравнивание в хедере?
@@ -427,3 +473,19 @@ address,
 Ссылки в хедере фиолетовые почему-то, поставить стили для всех вариантов ссылок?
 Раздел с желтыми квадритиками, лучше разделить квадрат и картинку svg?
 */
+
+.slider-qvadrocopter, .slider-bracelet {
+  display: none;
+}
+
+.form-write-to-us {
+  display: none;
+}
+
+.open-map {
+  display: none;
+}
+
+.catalog {
+  display: none;
+}
