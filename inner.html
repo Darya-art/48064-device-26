@@ -5,105 +5,123 @@
   <meta charset="utf-8">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>HTML Academy: Девайс</title>
+  <title>HTML Academy Antipina Darya</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet"
     id="wt-sky-css--725574360">
 </head>
 
 <body>
+
+  <!--ШАПКА-->
   <header>
-    <div class="up-logo">
-      <a href="index.html" aria-label="Переход на главную страницу сайта">
-        <img src="img/logo-device.svg" width="100" height="50" alt="Девайс">
-      </a>
-    </div>
-    <div class="first-line">
-      <form class="search-form search-header" action="http://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-form-input">Поле поиска</label>
-        <input type="text" class="search-text-header" placeholder="Поиск по сайту">
-        <button type="submit" class="button search-button">Найти</button>
-      </form>
-      <ul class="up-menu">
-        <li><a class="up-menu-links up-menu-login-user" href="#"
-            aria-label="ФИО пользователя и ссылка на его личный кабинет">Валентин Петухов</a></li>
-        <li><a class="up-menu-links up-menu-log-out" href="#" aria-label="Выход из личного кабинета">Выйти</a></li>
-        <li><a class="up-menu-links up-menu-compare" href="#"
-            aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a>
-        </li>
-        <li><a class="up-menu-links up-menu-cart" href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
-      </ul>
-    </div>
-    <nav class="up-menu-navigation">
-      <ul class="main-menu">
-        <li>
-          <a href="#" aria-label="Каталог-товаров по категориям">Каталог товаров</a>
-          <div class="catalog">
-            <ul>
-              <li><a href="#" aria-label="Раздел товаров для виртуальной реальности">Виртуальная реальность</a></li>
-              <li><a href="inner.html" aria-label="Раздел товаров с моноподами для серфи">Моноподы для селфи</a></li>
-              <!--Надо ли тут оставлять ссылку в меню, если мы на этой странице? Может ее как-то выделять, что она неактивна?-->
-              <li><a href="#" aria-label="Раздел товаров с экшн-камерами">Экшн-камеры</a></li>
-            </ul>
-            <ul>
-              <li><a href="#" aria-label="Раздел товаровс фитнес-браслетами">Фитнес-браслеты</a></li>
-              <li><a href="#" aria-label="Раздел товаров с умными часами">Умные часы</a></li>
-            </ul>
-            <ul>
-              <li><a href="#" aria-label="Раздел товаров с квадрокоптерами">Квадрокоптеры</a></li>
+      <div class="container">
+        <div class="main-header">
+          <div class="up-logo">
+              <a href="index.html" aria-label="На главную">
+            <img src="img/logo-device.svg" width="164" height="36" alt="Девайс">
+          </a>
+          </div>
+          <div class="header-first-line">
+            <form class="search-form search-header" action="http://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+              <input type="text" class="search-text-header" placeholder="Поиск по сайту">
+              <button type="submit" class="button search-button">Найти</button>
+            </form>
+            <ul class="up-menu">
+                <li class="up-menu-links up-menu-login-user"><a href="#"
+                  aria-label="ФИО пользователя и ссылка на его личный кабинет">Валентин Петухов</a></li>
+              <li class="up-menu-links up-menu-log-out"><a href="#" aria-label="Выход из личного кабинета">Выйти</a></li>
+              <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-compare" href="#"
+                  aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a>
+              </li>
+              <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-cart" href="#"
+                  aria-label="Ваша корзина с товарами">Корзина</a></li>
             </ul>
           </div>
-        </li>
-        <li><a href="#" aria-label="Раздел про доставку">Доставка</a></li>
-        <li><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
-        <li><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+          <nav class="up-menu-navigation">
+            <ul class="main-menu">
+              <li>
+                <a href="#" aria-label="Каталог-товаров по категориям">Каталог товаров</a>
+                <div class="catalog">
+                  <ul>
+                    <li><a href="#" aria-label="Раздел товаров для виртуальной реальности">Виртуальная реальность</a></li>
+                    <li><a href="inner.html" aria-label="Раздел товаров с моноподами для серфи">Моноподы для селфи</a>
+                    </li>
+                    <li><a href="#" aria-label="Раздел товаров с экшн-камерами">Экшн-камеры</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#" aria-label="Раздел товаровс фитнес-браслетами">Фитнес-браслеты</a></li>
+                    <li><a href="#" aria-label="Раздел товаров с умными часами">Умные часы</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#" aria-label="Раздел товаров с квадрокоптерами">Квадрокоптеры</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#" aria-label="Раздел про доставку">Доставка</a></li>
+              <li><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
+              <li><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
 
-    <div>
+
+  <main class="main-container">
+
+    <div class="container">
+      <div class="Path">
       <h1>Моноподы для селфи</h1>
       <ul class="catalog-path-nav">
-        <li>
-          <a class="item-path-nav" href="index.html" aria-label="Переход на главную страницу сайта">Главная</a>
+        <li class="item-path-nav">
+          <a href="index.html" aria-label="Переход на главную страницу сайта">Главная</a>
         </li>
-        <li>
-          <a class="item-path-nav" href="#" aria-label="Ссылка на все категории товаров, что у нас есть">Каталог товаров</a>
+        <li class="item-path-nav">
+          <a href="#" aria-label="Ссылка на все категории товаров, что у нас есть">Каталог товаров</a>
         </li>
-        <li>
-          <a class="item-path-nav" href="#" aria-label="Раздел со всеми товарами категории моноподов для селфи">Моноподы для селфи</a>
+        <li class="item-path-nav">
+          <a href="#" aria-label="Раздел со всеми товарами категории моноподов для селфи">Моноподы для селфи</a>
         </li>
       </ul>
     </div>
+  </div>
 
-    <div>
-      <div class="filter-left-title">
+
+    <div class="container-catalog">
+
+    <div class="container-catalog-title">
+      <div class="container">
+        <div class="filter-left-title">
         <h2 class="filter-title">Фильтр:</h2>
-      </div>
+          </div>
       <div class="filter-right-title">
         <h2 class="filter-title">сортировка:</h2>
         <ul class="range-options">
-          <li>
-            <a class="item-range-options" href="#">По цене</a>
+          <li class="item-range-options">
+            <a href="#">По цене</a>
           </li>
-          <li>
-            <a class="item-range-options" href="#">По типу</a>
+          <li class="item-range-options">
+            <a href="#">По типу</a>
           </li>
-          <li>
-            <a class="item-range-options" href="#">По популярности</a>
+          <li class="item-range-options">
+            <a  href="#">По популярности</a>
           </li>
         </ul>
         <ul class="range-options up-down">
-          <li><a class="item-range-options" href="#">вверх</a></li>
-          <li><a class="item-range-options" href="#">вниз</a></li>
+          <li class="item-range-options"><a href="#">вверх</a></li>
+          <li class="item-range-options"><a  href="#">вниз</a></li>
         </ul>
       </div>
     </div>
+  </div>
 
 
-    <div class="range-filter filter-left">
-      <form action="https://echo.htmlacademy.ru" method="post">
+
+<div class="catalog-main-part">
+  <div class="container">
+    <section class="left-filters-catalog">
+      <form  class="filter-forms" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="range-filter-cost">
           <legend>Стоимость</legend>
         </fieldset>
@@ -145,22 +163,22 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="link-more" type="submit">Показать</button>
       </form>
-    </div>
+    </section>
 
     <section>
       <div class="catalog-items-teaser">
-        <ul class="catalog-items-teaser">
+        <ul class="catalog-items-product">
           <li class="item-teaser">
             <img src="img/simple-selfi-monopod.png" alt="Любительская селфи-палка">
             <div>
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-
+            <div class="teaser-info">
             <a class="item-teaser-title" href="#">Любительская селфи-палка</a>
-            <p class="item-teaser-price">500 руб</p>
+            <p class="item-teaser-price">500 руб</p> </div>
           </li>
 
           <li class="item-teaser">
@@ -169,9 +187,9 @@
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-
+            <div class="teaser-info">
             <a class="item-teaser-title" href="#">Профессиональная селфи-палка</a>
-            <p class="item-teaser-price">1500 руб</p>
+            <p class="item-teaser-price">1500 руб</p> </div>
           </li>
 
           <li class="item-teaser">
@@ -180,9 +198,9 @@
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-
+            <div class="teaser-info">
             <a class="item-teaser-title" href="#">Непотопляемая селфи-палка</a>
-            <p class="item-teaser-price">2500 руб</p>
+            <p class="item-teaser-price">2500 руб</p> </div>
           </li>
 
           <li class="item-teaser">
@@ -191,9 +209,9 @@
               <button type="button">В корзину</button>
               <button type="button">Добавить к сравнению</button>
             </div>
-
+            <div class="teaser-info">
             <a class="item-teaser-title" href="#">Селфи-палка «Следуй за мной»</a>
-            <p class="item-teaser-price">4900 руб</p>
+            <p class="item-teaser-price">4900 руб</p> </div>
           </li>
         </ul>
       </div>
@@ -218,69 +236,77 @@
         </ul>
       </div>
     </section>
+
+  </div>
+</div>
+
   </main>
 
 
-  <footer>
-    <div class="footer-all">
-      <div class="footer-up-part">
-        <div class="down-logo">
-          <img src="img/logo-yellow.svg" width="100" height="50" alt="Девайс">
-        </div>
-        <div>
-          <ul class="down-menu">
-            <li><a class="down-menu-links login-user" href="#"
-                aria-label="ФИО пользователя и ссылка на его личный кабинет">Валентин Петухов</a></li>
-            <li><a class="down-menu-links log-out" href="#" aria-label="Выход из личного кабинета">Выйти</a></li>
-            <li><a class="down-menu-links down-menu-login" href="#"
-                aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
-            <li><a class="down-menu-links down-menu-compare" href="#"
-                aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a></li>
-            <li><a class="down-menu-links down-menu-cart" href="#" aria-label="Ваша корзина с товарами">Корзина</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-center-part">
-        <div>
-          <address>г. Москва, ул. Строителей, 15</address>
-        </div>
-        <div>
-          <ul>
-            <li><a class="down-menu-navigation" href="#" aria-label="Раздел про выгодную доставку">Доставка</a></li>
-            <li><a class="down-menu-navigation" href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
-            <li><a class="down-menu-navigation" href="#" aria-label="Раздел с контактами">Контакты</a></li>
-          </ul>
-        </div>
-        <div>
-          <a class="phone" href="tel:+4545464545">Тел.: +7 (495) 495-95-95</a>
-        </div>
-      </div>
 
-
-      <div class="footer-down-part">
-        <ul class="social-pages">
-          <li>
-            <a class="social" href="#" aria-label="Ссылка на группу компании Device в Facebook">
-              <img src="img/fb.svg" width="32" height="32" alt="facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social" href="#" aria-label="Ссылка на страничку компании Device в Instagram">
-              <img src="img/instagram.svg" alt="instagram">
-            </a>
-          </li>
-          <li>
-            <a class="social" href="#" aria-label="Ссылка на страничку компании Device в Twitter">
-              <img src="img/twitter.svg" alt="twitter">
-            </a>
-          </li>
-        </ul>
+  <!--Подвал-->
+  <footer class="footer-all">
+      <div class="container">
+        <div class="footer-up-part">
+          <div class="down-logo">
+              <a href="index.html" aria-label="На главную">
+            <img src="img/logo-yellow.svg" width="164" height="36" alt="Девайс"></a>
+          </div>
+          <div class="footer-menu-links">
+            <ul class=" down-menu">
+             <li class="down-menu-links login-user"><a href="#"
+                    aria-label="ФИО пользователя и ссылка на его личный кабинет">Валентин Петухов</a></li>
+                <li class="down-menu-links log-out"><a  href="#" aria-label="Выход из личного кабинета">Выйти</a></li>
+              <li class="down-menu-links down-menu-login"><a href="#"
+                  aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a></li>
+              <li class="down-menu-links down-menu-login"><a href="#" aria-label="Ваша корзина с товарами">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-center-part">
+          <div>
+            <address>г. Москва, ул. Строителей, 15</address>
+          </div>
+          <div>
+            <ul class="down-menu-navigation">
+              <li><a class="down-menu-navigation down-menu-links" href="#"
+                  aria-label="Раздел про выгодную доставку">Доставка</a></li>
+              <li><a class="down-menu-navigation down-menu-links" href="#"
+                  aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
+              <li><a class="down-menu-navigation down-menu-links" href="#" aria-label="Раздел с контактами">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a class="phone down-menu-links" href="tel:+4545464545">Тел.: +7 (495) 495-95-95</a>
+          </div>
+        </div>
+        <div class="footer-down-part">
+          <ul class="social-pages">
+            <li>
+              <a class="social" href="#" aria-label="Ссылка на группу компании Device в Facebook">
+                <img src="img/fb.svg" width="32" height="32" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social" href="#" aria-label="Ссылка на страничку компании Device в Instagram">
+                <img src="img/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li>
+              <a class="social" href="#" aria-label="Ссылка на страничку компании Device в Twitter">
+                <img src="img/twitter.svg" alt="twitter">
+              </a>
+            </li>
+          </ul>
+          <div class="HTML-Academy-logo">
+            <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Academy"><img src="img/logo-html.svg"
+                alt="HTML Academy"></a>
+          </div>
+        </div>
       </div>
-      <div>
-        <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Academy"><img src="img/logo-html.svg"
-            alt="HTML Academy"></a>
-      </div>
-  </footer>
+    </footer>
 
 </body>
 
