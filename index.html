@@ -6,8 +6,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy Antipina Darya</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet"
-    id="wt-sky-css--725574360">
 </head>
 
 <body>
@@ -26,19 +24,18 @@
           </form>
           <ul class="up-menu">
             <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-login" href="#"
-                aria-label="Форма для входа в личный кабинет сайта">Войти</a></li>
+                aria-label="Вход в личный кабинет">Войти</a></li>
             <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-compare" href="#"
-                aria-label="Здесь можно сравнить несколько товаров по критериям">Сравнить</a>
+                aria-label="Товары по критериям">Сравнить</a>
             </li>
-            <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-cart" href="#"
-                aria-label="Ваша корзина с товарами">Корзина</a></li>
+            <li class="up-menu-links up-menu-login"><a class="up-menu-links up-menu-cart" href="#">Корзина</a></li>
           </ul>
         </div>
 
         <nav class="up-menu-navigation">
           <ul class="main-menu">
-            <li>
-              <a href="#" aria-label="Каталог-товаров по категориям">Каталог товаров</a>
+            <li class="up-nav-links">
+              <a  href="inner.html" aria-label="Каталог-товаров по категориям">Каталог товаров</a>
               <div class="catalog">
                 <ul>
                   <li><a href="#" aria-label="Раздел товаров для виртуальной реальности">Виртуальная реальность</a></li>
@@ -55,9 +52,9 @@
                 </ul>
               </div>
             </li>
-            <li><a href="#" aria-label="Раздел про доставку">Доставка</a></li>
-            <li><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
-            <li><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
+            <li class="up-nav-links"><a href="#" aria-label="Раздел про доставку">Доставка</a></li>
+            <li class="up-nav-links"><a href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
+            <li class="up-nav-links"><a href="#" aria-label="Раздел с контактами">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -144,7 +141,7 @@
         </div>
       </li>
       </ul>
-      </div>>
+      </div>
     </section>
 
     <!--Категории квадратиками-->
@@ -212,34 +209,34 @@
     <h2 class="visually-hidden">Услуги и сервисы: доставка, гарантии, кредит</h2>
 
     <section class="service">
-      <div class="container">
+      <div class="container-service">
 
         <ul class="services-nav">
           <li class="oneservice-navigate">
-            <a class="link-more link-sevices" href="#" aria-label="Раздел про доставку">Доставка</a>
+            <a class="link-sevices" href="#" aria-label="Раздел про доставку">Доставка</a>
           </li>
           <li class="oneservice-navigate">
-            <a class="link-more link-sevices" href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a>
+            <a class="link-sevices" href="#" aria-label="Раздел с нашими гарантиями">Гарантия</a>
           </li>
           <li class="oneservice-navigate">
-            <a class="link-more link-sevices" href="#" aria-label="Раздел про наш выгодный кредит">Кредит</a>
+            <a class="link-sevices" href="#" aria-label="Раздел про наш выгодный кредит">Кредит</a>
           </li>
         </ul>
         <div class="services-description">
           <ul class="services-description">
-            <li class="oneservice-description">
+            <li class="oneservice-description oneservice-description-delivery">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</p>
               <img src="img/delivery.svg" alt="Стремительный курьер, доставка">
             </li>
-            <li class="oneservice-description">
+            <li class="oneservice-description oneservice-description-garanty">
               <h2>Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
                 новый.<br> Товар, не дом, конечно же.</p>
               <img src="img/warranty.svg" alt="Гарантии, позвони и расскажи, что не так">
             </li>
-            <li class="oneservice-description">
+            <li class="oneservice-description oneservice-description-credit">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
                 кредита. Выгодные для нашего банка, разумеется.</p>
@@ -291,9 +288,9 @@
           многими транспортными
           компаниями:</p>
         <ul class="about-us-partners">
-          <li><strong>Деловые линии</strong></li>
-          <li><strong>Автотрейдинг</strong></li>
-          <li><strong>ЖелДорЭкспедиция</strong></li>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
         <a class="link-more link-about-us" href="#" aria-label="Раздел, где можно узать много интересного о нас">
           Подробнее о нас</a>
@@ -337,11 +334,11 @@
         </div>
         <div>
           <ul class="down-menu-navigation">
-            <li><a class="down-menu-navigation down-menu-links" href="#"
+            <li class="down-menu-navigation down-nav-links"><a href="#"
                 aria-label="Раздел про выгодную доставку">Доставка</a></li>
-            <li><a class="down-menu-navigation down-menu-links" href="#"
+            <li class="down-menu-navigation down-nav-links"><a href="#"
                 aria-label="Раздел с нашими гарантиями">Гарантия</a></li>
-            <li><a class="down-menu-navigation down-menu-links" href="#" aria-label="Раздел с контактами">Контакты</a>
+            <li class="down-menu-navigation down-nav-links"><a href="#" aria-label="Раздел с контактами">Контакты</a>
             </li>
           </ul>
         </div>
@@ -350,6 +347,8 @@
         </div>
       </div>
       <div class="footer-down-part">
+      <div class="footer-decor"> </div>
+        <div class="socials-logo">
         <ul class="social-pages">
           <li>
             <a class="social" href="#" aria-label="Ссылка на группу компании Device в Facebook">
@@ -367,10 +366,11 @@
             </a>
           </li>
         </ul>
-        <div class="HTML-Academy-logo">
+        </div>
+        <div class="html-academy-logo">
           <a href="https://htmlacademy.ru/" aria-label="Ссылка на HTML Academy"><img src="img/logo-html.svg"
               alt="HTML Academy"></a>
-        </div>
+        </divdiv>
       </div>
     </div>
   </footer>
